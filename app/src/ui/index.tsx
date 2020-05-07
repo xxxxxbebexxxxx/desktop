@@ -132,9 +132,7 @@ const sendErrorWithContext = (
           extra.selectedState = `${currentState.selectedState.type}`
 
           if (currentState.selectedState.type === SelectionType.Repository) {
-            extra.selectedRepositorySection = `${
-              currentState.selectedState.state.selectedSection
-            }`
+            extra.selectedRepositorySection = `${currentState.selectedState.state.selectedSection}`
           }
         }
 
@@ -167,9 +165,7 @@ const sendErrorWithContext = (
         extra.accounts = `${currentState.accounts.length}`
 
         if (__DARWIN__) {
-          extra.automaticallySwitchTheme = `${
-            currentState.automaticallySwitchTheme
-          }`
+          extra.automaticallySwitchTheme = `${currentState.automaticallySwitchTheme}`
         }
       }
     } catch (err) {
